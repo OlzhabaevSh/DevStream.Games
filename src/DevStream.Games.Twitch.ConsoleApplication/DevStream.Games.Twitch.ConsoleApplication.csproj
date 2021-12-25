@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DevStream.Games.Twitch.Core\DevStream.Games.Twitch.Core.csproj" />
+    <ProjectReference Include="..\DevStream.Games.Twitch.TextFormatProvider.Csv\DevStream.Games.Twitch.TextFormatProvider.Csv.csproj" />
+    <ProjectReference Include="..\DevStream.Games.Twitch.TextFormatProvider.Json\DevStream.Games.Twitch.TextFormatProvider.Json.csproj" />
+    <ProjectReference Include="..\DevStream.Games.Twitch.TextFormatProvider.Xml\DevStream.Games.Twitch.TextFormatProvider.Xml.csproj" />
+    <ProjectReference Include="..\DevStream.Games.Twitch.WebClient\DevStream.Games.Twitch.WebClient.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "DevStream.Games.Twitch.ConsoleApplication": {
+      "commandName": "Project",
+      "commandLineArgs": "--is-show-data false --is-export true --export-type json"
+    }
+  }
+}

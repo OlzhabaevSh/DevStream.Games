@@ -1,0 +1,11 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DevStream.Games.Twitch.Core\DevStream.Games.Twitch.Core.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,72 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31424.327
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{A51DD296-785A-4187-ADC8-DD348E1684CB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{72669A74-2299-4397-9ADD-B8E9EA829334}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DevStream.Games.Twitch.ConsoleApplication", "DevStream.Games.Twitch.ConsoleApplication\DevStream.Games.Twitch.ConsoleApplication.csproj", "{C101EEBD-934A-4288-BE39-78DD6BE0A9E4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DevStream.Games.Twitch.Core", "DevStream.Games.Twitch.Core\DevStream.Games.Twitch.Core.csproj", "{7F57F78E-5DCE-427C-AE8B-A7186508F95E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DevStream.Games.Twitch.WebClient", "DevStream.Games.Twitch.WebClient\DevStream.Games.Twitch.WebClient.csproj", "{555420A8-FB9F-4752-8953-EDFBE360C57E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DevStream.Games.Twitch.TextFormatProvider.Xml", "DevStream.Games.Twitch.TextFormatProvider.Xml\DevStream.Games.Twitch.TextFormatProvider.Xml.csproj", "{206EFBEB-3455-4A64-9ABD-73EA070D7EA3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DevStream.Games.Twitch.TextFormatProvider.Json", "DevStream.Games.Twitch.TextFormatProvider.Json\DevStream.Games.Twitch.TextFormatProvider.Json.csproj", "{F1E8317D-EA3E-4DE5-8D65-5DE29394BC6C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DevStream.Games.Twitch.TextFormatProvider.Csv", "DevStream.Games.Twitch.TextFormatProvider.Csv\DevStream.Games.Twitch.TextFormatProvider.Csv.csproj", "{A840D425-FC62-4DDB-9AF2-3161780700A5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{04AC9C9B-81A4-414B-BF5E-60378753AA52}"
+	ProjectSection(SolutionItems) = preProject
+		ReadME.md = ReadME.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C101EEBD-934A-4288-BE39-78DD6BE0A9E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C101EEBD-934A-4288-BE39-78DD6BE0A9E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C101EEBD-934A-4288-BE39-78DD6BE0A9E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C101EEBD-934A-4288-BE39-78DD6BE0A9E4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7F57F78E-5DCE-427C-AE8B-A7186508F95E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F57F78E-5DCE-427C-AE8B-A7186508F95E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F57F78E-5DCE-427C-AE8B-A7186508F95E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F57F78E-5DCE-427C-AE8B-A7186508F95E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{555420A8-FB9F-4752-8953-EDFBE360C57E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{555420A8-FB9F-4752-8953-EDFBE360C57E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{555420A8-FB9F-4752-8953-EDFBE360C57E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{555420A8-FB9F-4752-8953-EDFBE360C57E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{206EFBEB-3455-4A64-9ABD-73EA070D7EA3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{206EFBEB-3455-4A64-9ABD-73EA070D7EA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{206EFBEB-3455-4A64-9ABD-73EA070D7EA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{206EFBEB-3455-4A64-9ABD-73EA070D7EA3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F1E8317D-EA3E-4DE5-8D65-5DE29394BC6C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1E8317D-EA3E-4DE5-8D65-5DE29394BC6C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F1E8317D-EA3E-4DE5-8D65-5DE29394BC6C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F1E8317D-EA3E-4DE5-8D65-5DE29394BC6C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A840D425-FC62-4DDB-9AF2-3161780700A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A840D425-FC62-4DDB-9AF2-3161780700A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A840D425-FC62-4DDB-9AF2-3161780700A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A840D425-FC62-4DDB-9AF2-3161780700A5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C101EEBD-934A-4288-BE39-78DD6BE0A9E4} = {A51DD296-785A-4187-ADC8-DD348E1684CB}
+		{7F57F78E-5DCE-427C-AE8B-A7186508F95E} = {A51DD296-785A-4187-ADC8-DD348E1684CB}
+		{555420A8-FB9F-4752-8953-EDFBE360C57E} = {A51DD296-785A-4187-ADC8-DD348E1684CB}
+		{206EFBEB-3455-4A64-9ABD-73EA070D7EA3} = {A51DD296-785A-4187-ADC8-DD348E1684CB}
+		{F1E8317D-EA3E-4DE5-8D65-5DE29394BC6C} = {A51DD296-785A-4187-ADC8-DD348E1684CB}
+		{A840D425-FC62-4DDB-9AF2-3161780700A5} = {A51DD296-785A-4187-ADC8-DD348E1684CB}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A3D77FC5-0E2C-4964-9F0B-900452571CA8}
+	EndGlobalSection
+EndGlobal
