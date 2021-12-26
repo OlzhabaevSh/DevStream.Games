@@ -5,10 +5,19 @@
     using System.Collections.Generic;
     using System.Linq;
 
+    /// <summary>
+    /// 
+    /// </summary>
     public class ConsoleHelper
     {
+        /// <summary>
+        /// 
+        /// </summary>
         private readonly Dictionary<string, string> _args;
 
+        /// <summary>
+        /// 
+        /// </summary>
         public ConsoleHelper()
         {
             _args = new Dictionary<string, string>();
@@ -27,6 +36,11 @@
                 "Path with filename to save a file (don't include a file extension) | string | default: [root]/{datetime}.{exportType} | example: my-data");
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="args"></param>
+        /// <returns></returns>
         public TwitchConsoleApplicationSettings ParseArgs(string[] args)
         {
             var result = new TwitchConsoleApplicationSettings()
@@ -65,6 +79,9 @@
             return result;
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
         public void ShowCommands()
         {
             Console.WriteLine("Hello! This is a help page");
@@ -78,6 +95,10 @@
             }
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="collection"></param>
         public void DrawGamesInConsole(ICollection<TwitchGameDataDto> collection)
         {
             foreach (var item in collection)

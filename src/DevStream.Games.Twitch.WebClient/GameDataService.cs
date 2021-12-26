@@ -10,6 +10,7 @@
     using System.Text.RegularExpressions;
     using System.Threading.Tasks;
 
+    /// <inheritdoc />
     public class GameDataService : IGameDataService
     {
         private readonly HttpClient _httpClient;
@@ -23,6 +24,7 @@
             _config = config;
         }
 
+        /// <inheritdoc />
         public async Task<ICollection<TwitchGameDataDto>> Get(int skip = 0, int take = 30)
         {
             _httpClient.DefaultRequestHeaders.TryAddWithoutValidation("Client-Id", "kimne78kx3ncx6brgo4mv6wki5h1ko");
@@ -55,6 +57,10 @@
             return edgeCollection;
         }
 
+        /// <summary>
+        /// TODO: need to understand how it works. Right now it just a copy of request from browser
+        /// </summary>
+        /// <returns></returns>
         private object GetRequestBody()
         {
             var requestBodyObject = new Dictionary<string, object>();

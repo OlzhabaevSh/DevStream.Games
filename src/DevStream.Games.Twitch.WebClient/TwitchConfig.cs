@@ -6,8 +6,14 @@ using System.Threading.Tasks;
 
 namespace DevStream.Games.Twitch.WebClient
 {
+    /// <summary>
+    /// Config for Twitch service
+    /// </summary>
     public class TwitchConfig
     {
+        /// <summary>
+        /// Url to request
+        /// </summary>
         public string Url { get; set; }
     }
 }
