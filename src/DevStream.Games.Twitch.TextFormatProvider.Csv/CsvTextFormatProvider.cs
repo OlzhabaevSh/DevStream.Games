@@ -6,9 +6,13 @@
     using System.Collections.Generic;
     using System.Text;
 
+    /// <summary>
+    /// Provider for Csv text format
+    /// </summary>
     public class CsvTextFormatProvider : ITextFormatProvider
     {
-        public string Convert(ICollection<TwitchGameData> data, DateTime downloadDatetime)
+        /// <inheritdoc />
+        public string Convert(ICollection<TwitchGameDataDto> data, DateTime downloadDatetime)
         {
             var sb = new StringBuilder();
 

@@ -78,7 +78,7 @@
             }
         }
 
-        public void DrawGamesInConsole(ICollection<TwitchGameData> collection)
+        public void DrawGamesInConsole(ICollection<TwitchGameDataDto> collection)
         {
             foreach (var item in collection)
             {

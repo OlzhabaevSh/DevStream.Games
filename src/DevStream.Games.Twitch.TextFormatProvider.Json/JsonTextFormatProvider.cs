@@ -5,9 +5,13 @@
     using System;
     using System.Collections.Generic;
 
+    /// <summary>
+    /// Provider for json text format
+    /// </summary>
     public class JsonTextFormatProvider : ITextFormatProvider
     {
-        public string Convert(ICollection<TwitchGameData> data, DateTime downloadDatetime)
+        /// <inheritdoc />
+        public string Convert(ICollection<TwitchGameDataDto> data, DateTime downloadDatetime)
         {
             return System.Text.Json.JsonSerializer.Serialize(data);
         }

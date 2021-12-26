@@ -7,11 +7,15 @@
     using System.IO;
     using System.Xml.Serialization;
 
+    /// <summary>
+    /// Provider for xml text format
+    /// </summary>
     public class XmlTextFormatProvider : ITextFormatProvider
     {
-        public string Convert(ICollection<TwitchGameData> data, DateTime downloadDatetime)
+        /// <inheritdoc />
+        public string Convert(ICollection<TwitchGameDataDto> data, DateTime downloadDatetime)
         {
-            var schema = new XmlSerializer(typeof(List<TwitchGameData>));
+            var schema = new XmlSerializer(typeof(List<TwitchGameDataDto>));
 
             using var stream = new MemoryStream();
 

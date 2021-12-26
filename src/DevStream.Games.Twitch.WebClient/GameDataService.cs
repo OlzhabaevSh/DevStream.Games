@@ -23,7 +23,7 @@
             _config = config;
         }
 
-        public async Task<ICollection<TwitchGameData>> Get(int skip = 0, int take = 30)
+        public async Task<ICollection<TwitchGameDataDto>> Get(int skip = 0, int take = 30)
         {
             _httpClient.DefaultRequestHeaders.TryAddWithoutValidation("Client-Id", "kimne78kx3ncx6brgo4mv6wki5h1ko");
             var jsonContext = System.Net.Http.Json.JsonContent.Create(GetRequestBody());
@@ -33,7 +33,7 @@
             return result;
         }
 
-        private ICollection<TwitchGameData> Serialize(string data)
+        private ICollection<TwitchGameDataDto> Serialize(string data)
         {
             var jsonObject = JsonDocument.Parse(data);
             var root = jsonObject.RootElement;
@@ -45,7 +45,7 @@
 
             var edgeCollection = edges.EnumerateArray()
                 .Select(f => f.GetProperty("node"))
-                .Select(f => new TwitchGameData()
+                .Select(f => new TwitchGameDataDto()
                 {
                     Name = Regex.Replace(f.GetProperty("displayName").GetString(), "[^0-9a-zA-Z]+", ""),
                     ViewerCount = f.GetProperty("viewersCount").GetDecimal()
