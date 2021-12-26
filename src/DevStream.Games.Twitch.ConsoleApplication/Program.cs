@@ -44,7 +44,9 @@
                 if (consoleArgs.IsExport) 
                 {
                     var stringContent = textFormater.Convert(gameCollection, DateTime.Now);
-                    await fileSaveHelper.Save(consoleArgs.ExportPath, stringContent);
+                     
+                    var filePath = await fileSaveHelper.Save(consoleArgs.ExportPath, stringContent);
+                    Console.WriteLine($"Your new file location: {filePath}");
                 }
             }
             catch (Exception ex) 

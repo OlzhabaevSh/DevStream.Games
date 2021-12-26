@@ -57,7 +57,7 @@
                     result.ExportPath = result.ExportPath.Replace("csv", result.ExportType);
                 }
 
-                if (args[i] == "--export-path-with-filename")
+                if (args[i] == "--path-with-filename")
                     result.ExportPath = $"{args[i + 1]}.{result.ExportType}";
 
             }

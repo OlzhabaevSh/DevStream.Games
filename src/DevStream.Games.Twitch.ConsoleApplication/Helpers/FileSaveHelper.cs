@@ -5,12 +5,14 @@
 
     public class FileSaveHelper
     {
-        public Task Save(string path, string content) 
+        public async Task<string> Save(string path, string content) 
         {
             using var file = File.CreateText(path);
             file.Close();
             
-            return File.WriteAllTextAsync(path, content);
+            await File.WriteAllTextAsync(path, content);
+
+            return Path.GetFullPath(path);
         }
     }
 }
